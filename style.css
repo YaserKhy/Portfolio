@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* colors : main 2b2bff , circle and skills e1e6ff , blob 6969ff*/
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background-color: #2b2bff;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.logo,
+.navbar a {
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo:visited {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: #2b2bff;
+    transition: 0.3s ease;
+}
+
+section {
+    padding: 100px 200px;
+    background-color: white;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(blob-scene-haikei.svg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.desc h1 {
+    font-size: 4em;
+    margin: 10px 0px;
+    color: #2b2bff;
+}
+
+.desc h3 {
+    font-size: 1.8em;
+}
+
+.desc #light {
+    font-weight: 400;
+}
+
+#circle {
+    background-color: #e1e6ff;
+    border-radius: 50%;
+    transform: translateY(0px);
+    animation: float 5s ease infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#contactbtn {
+    background-color: #2b2bff;
+    border-radius: 1em;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1em;
+    margin: 20px 0px;
+    font-size: 1.1em;
+    transition: 0.6s ease;
+}
+
+#contactbtn:hover {
+    transform: scale(1.1);
+    background-color: #6969ff;
+    transition: 0.6s ease;
+}
+
+.skills {
+    width: 100%;
+    background-color: #e1e6ff;
+}
+
+.skills h1,
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    color: #2b2bff;
+    margin-bottom: 30px;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 21em;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 0 1px #5f5fff;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20.5px 0.5px #5f5fff;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.info h3,
+.info p {
+    text-align: center;
+    margin-top: 13px;
+}
+
+.icon {
+    font-size: 7em;
+    height: 1.3em;
+}
+
+.contact {
+    width: 100%;
+}
+
+.socialContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social {
+    margin: 1em;
+    border-radius: 20px;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e1e6ff;
+    font-size: 1.2em;
+}
+
+.social .socialLogo {
+    font-size: 2em;
+    position: relative;
+    left: -0.12em;
+    text-align: center;
+    background-color: #c1c1ff;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.social .socialLink {
+    font-weight: 500;
+    margin: auto;
+    padding: 10px 0px;
+    font-size: 1em;
+}
+
+.social .socialLink a {
+    color: black;
+    text-decoration: none;
+}
+
+.social .socialLink a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.social .socialLink a:visited {
+    color: black;
+}
+
+@media (max-width:1023px) {
+
+    header {
+        width: 100vw;
+        z-index: 99;
+        padding: 0px;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    .navbar {
+        margin-right: 1em;
+    }
+
+    .navbar a {
+        font-size: 0.2em;
+        padding: 0em 1.5em;
+        margin: 0em 1.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .main {
+        min-height: 33vh;
+    }
+
+    .desc {
+        padding-top: 90px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .desc h1 {
+        font-size: 1.4em;
+    }
+
+    .desc h3 {
+        font-size: 1em;
+    }
+
+    #contactbtn {
+        font-size: 0.7em;
+    }
+
+    .skills h1,
+    .contact h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .cardsContainer {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 16em;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .info h3,
+    .info p {
+        font-size: 1em;
+        text-align: center;
+        margin-top: 13px;
+    }
+
+    .info p {
+        font-size: 0.7em;
+    }
+
+    .icon {
+        font-size: 5em;
+        height: 1.3em;
+    }
+
+    .social {
+        margin: 1em;
+        width: 8em;
+        font-size: 1em;
+    }
+
+    .social .socialLogo {
+        font-size: 1.5em;
+        position: relative;
+        left: -0.12em;
+        text-align: center;
+        background-color: #c1c1ff;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .social .socialLink {
+        font-weight: 500;
+        margin: auto;
+        padding: 10px 0px;
+        font-size: 0.6em;
+        overflow: hidden;
+    }
+}

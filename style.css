@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-/* colors : main 252bc1 , circle and skills e1e6ff , blob 6969ff*/
+/* colors : main 252bc1 , circle and skills eaedff , blob 6969ff*/
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,14 +10,14 @@
 }
 
 header {
-    width: 100%;
-    background-color: #252bc1;
-    position: fixed;
-    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #252bc1;
+    position: fixed;
+    width: 100%;
     padding: 0rem 3rem;
+    z-index: 99;
 }
 
 .logo, .navbar a {
@@ -28,9 +28,9 @@ header {
 .logo {
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
-    text-decoration: none;
 }
 
 .logo:visited {
@@ -45,27 +45,25 @@ header {
 
 .navbar a {
     color: white;
+    text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
-    text-decoration: none;
     transition: 0.3s ease;
 }
 
 .navbar a:hover {
+    color: #252bc1;
     background-color: white;
     border-radius: 20rem;
-    color: #252bc1;
     transition: 0.3s ease;
 }
 
 section {
-    padding: 6.25rem 12.5rem;
     background-color: white;
+    padding: 6.25rem 12.5rem;
 }
 
 .main {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,6 +71,8 @@ section {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .desc {
@@ -86,21 +86,21 @@ img {
 }
 
 .desc h1 {
-    font-size: 3rem;
-    margin: 0.625rem 0rem;
     color: #252bc1;
+    margin: 0.625rem 0rem;
+    font-size: 3rem;
 }
 
 .desc h3 {
     font-size: 1.5rem;
 }
 
-.desc #light {
+#light {
     font-weight: 400;
 }
 
 #circle {
-    background-color: #e1e6ff;
+    background-color: #eaedff;
     border-radius: 50%;
     transform: translateY(0px);
     animation: float 5s ease infinite;
@@ -113,10 +113,10 @@ img {
 }
 
 #contactbtn {
-    background-color: #252bc1;
-    border-radius: 1rem;
     color: white;
+    background-color: #252bc1;
     text-decoration: none;
+    border-radius: 1rem;
     width: fit-content;
     height: fit-content;
     padding: 0.5rem 1rem;
@@ -126,38 +126,37 @@ img {
 }
 
 #contactbtn:hover {
-    transform: scale(1.1);
     background-color: #6969ff;
+    transform: scale(1.1);
     transition: 0.6s ease;
 }
 
 .skills {
     width: 100%;
-    background-color: #e1e6ff;
+    background-color: #eaedff;
 }
 
-.skills h1,
-.contact h1 {
+.skills h1, .contact h1 {
     display: flex;
     justify-content: center;
-    font-size: 2.2rem;
-    color: #252bc1;
     margin-bottom: 1.875rem;
+    color: #252bc1;
+    font-size: 2.2rem;
 }
 
 .cardsContainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: white;
     width: 21rem;
     padding: 1.25rem;
@@ -173,8 +172,7 @@ img {
     transition: 0.5s ease;
 }
 
-.info h3,
-.info p {
+.info h3, .info p {
     text-align: center;
     margin-top: 0.8125rem;
 }
@@ -196,17 +194,20 @@ img {
 }
 
 .social {
-    margin: 1.3rem;
-    border-radius: 1.7rem;
-    width: 23rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e1e6ff;
+    margin: 1.3rem;
+    border-radius: 1.7rem;
+    width: 23rem;
+    background-color: #eaedff;
     font-size: 1.2rem;
 }
 
-.social .socialLogo {
+.socialLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2.4rem;
     position: relative;
     left: -0.12rem;
@@ -217,24 +218,24 @@ img {
     height: 3.7rem;
 }
 
-.social .socialLink {
+.socialLink {
     font-weight: 500;
     margin: auto;
     padding: 1rem 0rem;
     font-size: 1.2rem;
 }
 
-.social .socialLink a {
+.socialLink a {
     color: black;
     text-decoration: none;
 }
 
-.social .socialLink a:hover {
+.socialLink a:hover {
     color: black;
     text-decoration: underline;
 }
 
-.social .socialLink a:visited {
+.socialLink a:visited {
     color: black;
 }
 
@@ -293,8 +294,7 @@ img {
         padding: 0.3rem 0.7rem;
     }
 
-    .skills h1,
-    .contact h1 {
+    .skills h1, .contact h1 {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
@@ -309,8 +309,7 @@ img {
         margin: 0.9375rem;
     }
 
-    .info h3,
-    .info p {
+    .info h3, .info p {
         font-size: 1rem;
         text-align: center;
         margin-top: 0.8125rem;
@@ -335,7 +334,7 @@ img {
         font-size: 1.1rem;
     }
 
-    .social .socialLogo {
+    .socialLogo {
         font-size: 1.5rem;
         position: relative;
         left: -0.12rem;
@@ -346,10 +345,9 @@ img {
         height: 2.3rem;
     }
 
-    .social .socialLink {
-        font-weight: 500;
+    .socialLink {
         margin: auto;
-        padding: 1rem 0rem;
+        padding: 0.7rem 0rem;
         font-size: 0.65rem;
         overflow: hidden;
     }

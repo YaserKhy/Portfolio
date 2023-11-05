@@ -63,11 +63,11 @@ section {
     padding: 6.25rem 12.5rem;
 }
 
-.main {
+.about {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(blob-scene-haikei.svg);
+    background-image: url(../public/blob-scene-haikei.svg);
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -136,7 +136,7 @@ img {
     background-color: #eaedff;
 }
 
-.skills h1, .contact h1 {
+.skills h1, .contact h1, .projects h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 1.875rem;
@@ -268,7 +268,7 @@ img {
         padding: 1.25rem;
     }
 
-    .main {
+    .about {
         min-height: 33vh;
     }
 

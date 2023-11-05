@@ -7,7 +7,7 @@ export default function About() {
             <h3>I develop and design inspiring interfaces</h3>
             <a href="#Contact" id="contactbtn">Contact Me</a>
         </div>
-        <div id="circle"><img src="/codingpic.svg" alt="codingPic"/></div>
+        <div id="circle"><img src={`${process.env.PUBLIC_URL}/codingpic.svg`} alt="codingPic"/></div>
     </section>
     );
 }

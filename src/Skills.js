@@ -20,7 +20,7 @@ export default function Skills() {
 
             <SkillCard
                 icon='fa-solid fa-comments'
-                title='Fast Communication'
+                title='Effective Communication'
                 desc="Express my ideas in an understandable manner."
             />
         </div>

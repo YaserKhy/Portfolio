@@ -9,21 +9,20 @@ export default function Skills() {
             <SkillCard
                 icon='fa-solid fa-people-group'
                 title='Teamwork'
-                desc="I'm an effective team player who can easily fit in."
+                desc="Effective team player who can easily fit in."
             />
 
             <SkillCard
                 icon='fa-regular fa-hourglass-half'
                 title='Time Management'
-                desc="I'm able to manage my time and daily tasks."
+                desc="Able to manage my time and daily tasks."
             />
 
             <SkillCard
                 icon='fa-solid fa-comments'
                 title='Fast Communication'
-                desc="I'm able to express my ideas in an understandable manner."
+                desc="Express my ideas in an understandable manner."
             />
-
         </div>
     </section>
     );

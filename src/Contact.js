@@ -6,9 +6,9 @@ export default function Contact() {
             <h1>Contact</h1>
             <div className="socialContainer">
                 <SocialCard
-                    icon='fa-brands fa-x-twitter'
-                    link='https://x.com/Yso_kh'
-                    val='@Yso_kh'
+                    icon='fa-brands fa-linkedin'
+                    link='https://www.linkedin.com/in/yaser-alkhayyat-382369290'
+                    val='YaserAlkhayyat'
                 />
 
                 <SocialCard
@@ -18,9 +18,9 @@ export default function Contact() {
                 />
 
                 <SocialCard
-                    icon='fa-brands fa-linkedin'
-                    link='https://www.linkedin.com/in/yaser-alkhayyat-382369290'
-                    val='YaserAlkhayyat'
+                    icon='fa-brands fa-x-twitter'
+                    link='https://x.com/Yso_kh'
+                    val='@Yso_kh'
                 />
 
                 <SocialCard
@@ -28,7 +28,6 @@ export default function Contact() {
                     link='https://github.com/YaserKhy'
                     val='YaserKhy'
                 />
-
             </div>
         </section>
     );

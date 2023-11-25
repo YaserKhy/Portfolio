@@ -1,7 +1,7 @@
 import Header from './Header.js';
 import About from './About.js';
 import Skills from './Skills.js';
-import Projects from './Projects.js'
+//import Projects from './Projects.js'
 import Contact from './Contact.js';
 import './App.css';
 

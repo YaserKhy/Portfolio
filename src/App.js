@@ -4,6 +4,7 @@ import Skills from './Skills.js';
 //import Projects from './Projects.js'
 import Contact from './Contact.js';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

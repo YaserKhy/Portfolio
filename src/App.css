@@ -157,14 +157,7 @@ body .navbar {
 .social { border-radius: 1.7rem; background-color: var(--secondColor); }
 
 /* Social Logo */
-.socialLogo {
-    position: relative;
-    left: -1rem;
-    background-color: #c1c1ff;
-    border-radius: 50%;
-    width: 3.7rem;
-    height: 3.7rem;
-}
+.socialLogo { position: relative; left: -1rem; background-color: #c1c1ff; border-radius: 50%; width: 3.7rem; height: 3.7rem; }
 
 /* Social Link */
 .socialLink { font-size: 1.2rem; }

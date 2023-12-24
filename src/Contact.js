@@ -1,43 +1,44 @@
-import SocialCard from './SocialCard.js';
+import ContactCard from './ContactCard.js';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Contact() {
     return (
-        <section className="contact" id="Contact">
+        <Container fluid className="contact flex-column justify-content-center align-items-center" id="Contact">
             <h1 className='text-center'>Contact</h1>
-            <div className="container text-center" id='contactContainer'>
-                <div className="row">
-                    <div className="col">
-                        <SocialCard
+            <Container className="contactContainer text-center">
+                <Row>
+                    <Col lg={4} xs={7} className='m-auto'>
+                        <ContactCard
                             icon='fa-brands fa-linkedin'
                             link='https://www.linkedin.com/in/yaser-alkhayyat-382369290'
                             val='YaserAlkhayyat'
                         />
-                    </div>
-                    <div className="col">
-                        <SocialCard
+                    </Col>
+                    <Col lg={4} xs={7} className='m-auto'>
+                        <ContactCard
                             icon='fa-solid fa-envelope'
                             link='mailto:YaserAlkhayyat@outlook.sa'
                             val='YaserAlkhayyat@outlook.sa'
                         />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col">
-                        <SocialCard
+                    </Col>
+                </Row>
+                <Row>
+                    <Col lg={4} xs={7} className='m-auto'>
+                        <ContactCard
                             icon='fa-brands fa-github'
                             link='https://github.com/YaserKhy'
                             val='YaserKhy'
                         />
-                    </div>
-                    <div className="col">
-                        <SocialCard
+                    </Col>
+                    <Col lg={4} xs={7} className='m-auto'>
+                        <ContactCard
                             icon='fa-brands fa-x-twitter'
                             link='https://x.com/Yso_kh'
                             val='@Yso_kh'
                         />
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </Col>
+                </Row>
+            </Container>
+        </Container>
     );
 }

@@ -7,7 +7,7 @@ export default function ContactCard({icon,link,val}) {
                 <i className={icon} style={{color:'#252bc1'}}></i>
             </div>
 
-            <div className="socialLink">
+            <div className="socialLink fw-medium m-auto py-3 px-0">
                 <a href={link} target="_blank" rel="noreferrer">{val}</a>
             </div>
         </Container>

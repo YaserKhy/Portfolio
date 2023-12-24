@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 export default function Header() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar sticky='top' expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand className='fs-4 fw-semibold mt-0 me-5 mb-0 ms-2 text-uppercase' href="#About">Yaser Alkhayyat</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

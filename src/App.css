@@ -17,12 +17,6 @@
     scroll-behavior: smooth;
 }
 
-/* Section Tag */
-/* section {
-    background-color: white;
-    padding: 6.25rem 12.5rem;
-} */
-
 /* ////////////////////////////// Navbar Styling ////////////////////////////// */
 /* Navbar Color */
 body .bg-body-tertiary { background-color: var(--mainColor) !important; }
@@ -42,6 +36,9 @@ body .navbar {
 .navbar .nav-link { color: white; border-radius: 20rem; transition: 0.3s ease; width: fit-content; }
 .navbar .nav-link:focus { color: white; }
 .navbar .nav-link:hover { color: var(--mainColor); background-color: white; transition: 0.3s ease; }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white !important;
+}
 
 /* Menu Button */
 .navbar .navbar-toggler { border-color: transparent; transition: 0.3s ease-in-out; padding: 0.2rem 0.2rem; }
@@ -113,17 +110,10 @@ body .navbar {
 .skills { background-color: var(--secondColor); padding: 6.25rem 12.5rem;}
 
 /* All Sections Headings */
-.skills h1, .projects h1, .contact h1 {
-    /* margin-bottom: 1.75rem; */
-    color: var(--mainColor);
-    font-size: 2.2rem;
-}
+.skills h1, .projects h1, .contact h1 { color: var(--mainColor); font-size: 2.2rem; }
 
 /* Skills Slider */
 .SkillsSplide {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     max-width: 100%;
     padding-bottom: 1.5rem;
     left: 1.7rem;
@@ -164,11 +154,7 @@ body .navbar {
 .contact .contactContainer { padding-left: 1rem; }
 
 /* Social Cards */
-.social {
-    /* margin: 1.3rem; */
-    border-radius: 1.7rem;
-    background-color: var(--secondColor);
-}
+.social { border-radius: 1.7rem; background-color: var(--secondColor); }
 
 /* Social Logo */
 .socialLogo {
@@ -181,12 +167,7 @@ body .navbar {
 }
 
 /* Social Link */
-.socialLink {
-    font-weight: 500;
-    margin: auto;
-    padding: 1rem 0rem;
-    font-size: 1.2rem;
-}
+.socialLink { font-size: 1.2rem; }
 
 /* Links in Social Link */
 .socialLink a { color: black; text-decoration: none; }
@@ -197,9 +178,7 @@ body .navbar {
 
 @media (max-width:1023px) {
 
-    .navbar .nav-link {
-        border-radius: 0;
-    }
+    .navbar .nav-link { border-radius: 0; }
     .navbar .nav-link:hover {
         color: white;
         background-color: transparent;
@@ -218,8 +197,6 @@ body .navbar {
     .skills { padding: 1.25rem; }
     .skills h1, .projects h1, .contact h1 { font-size: 1.2rem; margin-bottom: 0.5rem !important; }
     .SkillsSplide { left: 0.3rem; }
-    .SkillsSplide .card #skillpic { font-size: 2rem; }
-
     .SkillsSplide .card {
         width: 10rem;
         padding: 0.75rem;
@@ -230,23 +207,22 @@ body .navbar {
         --bs-card-spacer-y: 0.5rem;
         --bs-card-spacer-x: 0.3rem;
     }
+    .SkillsSplide .card #skillpic { font-size: 2rem; }
 
-    .SkillsSplide .splide__arrow--prev { left: -1rem; width: 1rem; height: 1rem; }
-    .SkillsSplide .splide__arrow--next { right: -0.5rem; width: 1rem; height: 1rem; }
-    
     /* Skill Title */
     .SkillsSplide .card .cardTitle { font-size: 1rem; }
 
     /* Skill Description */
     .SkillsSplide .card .cardText { font-size: 0.6rem; }
 
+    .SkillsSplide .splide__arrow--prev { left: -1rem; width: 1rem; height: 1rem; }
+    .SkillsSplide .splide__arrow--next { right: -0.5rem; width: 1rem; height: 1rem; }
     .SkillsSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
     .SkillsSplide .splide__pagination__page.is-active { background: var(--mainColor); }
-
+    
     .contact { padding: 1.25rem; }
     .contact .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }
-
     .socialLogo { width: 2.3rem; height: 2.3rem; font-size: 1rem !important;}
-    .socialLink { margin: auto; padding: 0.7rem 0rem; font-size: 0.65rem; overflow: hidden; }
+    .socialLink { padding: 0.7rem 0rem; font-size: 0.65rem; overflow: hidden; }
 }

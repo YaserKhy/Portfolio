@@ -1,6 +1,7 @@
+import React from 'react'
 import { Container } from "react-bootstrap";
 
-export default function ContactCard({icon,link,val}) {
+function ContactCard({icon,link,val}) {
     return (
         <Container className="social d-flex align-items-center justify-content-center m-4">
             <div className="socialLogo d-flex align-items-center justify-content-center fs-2 text-center">
@@ -13,3 +14,5 @@ export default function ContactCard({icon,link,val}) {
         </Container>
     )
 }
+
+export default ContactCard

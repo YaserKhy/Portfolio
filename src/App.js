@@ -1,19 +1,36 @@
-import Header from './Header.js';
-import About from './About.js';
-import Skills from './Skills.js';
-//import Projects from './Projects.js'
-import Contact from './Contact.js';
+import Header from './Components/Header.js';
+import About from './Components/About.js';
+import Areas from './Components/Areas.js';
+import AreasDict from './Data/AreasDict.js'
+import Skills from './Components/Skills.js';
+import SkillsDict from './Data/SkillsDict.js';
+import Projects from './Components/Projects.js'
+import Contact from './Components/Contact.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [numCards, setNumCards] = useState(3)
+  const [skillsPerRow, setSkillsPerRow] = useState(4)
+
+  // called only once
+  useEffect(() => {
+    const checkDeviceWidth = () => { if (window.innerWidth < 450) { setNumCards(2); setSkillsPerRow(3); } else { setNumCards(3); setSkillsPerRow(4); } }
+    // checkDeviceWidth();
+    window.addEventListener('resize', checkDeviceWidth) // whenever user resize screen , perform checkDeviceWidth
+    return () => { window.removeEventListener('resize', checkDeviceWidth) }
+  }, []);
+
   return (
     <div>
-      <Header/>
-      <About/>
-      <Skills/>
-      {/* <Projects/> */}
-      <Contact/>
+      <Header />
+      <About />
+      <Areas AreasDict={AreasDict} numCards={numCards} />
+      <Skills SkillsDict={SkillsDict} skillsPerRow={skillsPerRow} />
+      <Projects />
+      <Contact />
     </div>
   );
 }

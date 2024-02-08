@@ -4,9 +4,9 @@
 
 /* CSS Variables */
 :root {
-    --mainColor : #252bc1;
-    --secondColor : #eaedff;
-    --blobColor : #6969ff;
+    --MainColor : #252bc1;
+    --SecondColor : #eaedff;
+    --BlobColor : #6969ff;
 }
 
 * {
@@ -17,15 +17,36 @@
     scroll-behavior: smooth;
 }
 
-/* ////////////////////////////// Navbar Styling ////////////////////////////// */
-/* Navbar Color */
-body .bg-body-tertiary { background-color: var(--mainColor) !important; }
+/* ////////////////////////////// General Styling ////////////////////////////// */
 
+/* All sections */
+.section {padding: 5rem 12.5rem;}
+
+/* All Sections Headings */
+.sectionHeader { color: var(--MainColor); font-size: 2.2rem; }
+
+/* Primary Button */
+div .primbtn {
+    color: white;
+    background-color: var(--MainColor);
+    text-decoration: none;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 1.25rem 0rem;
+}
+div .primbtn:hover { background-color: #353cff; border-color: #353cff; }
+
+/* ////////////////////////////// Navbar Styling ////////////////////////////// */
 body .navbar {
-    --bs-navbar-nav-link-padding-x: 1rem;       /* Padding of Navbar Items */
-    --bs-navbar-padding-y: 0.25rem;             /* Padding of Navbar Itself */
+    /* Padding of Navbar Items */
+    --bs-navbar-nav-link-padding-x: 1rem;
+    /* Padding of Navbar Itself */
+    --bs-navbar-padding-y: 0.25rem;
     --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgb%28255, 255, 255%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e);
-    --bs-navbar-toggler-focus-width: 0rem;      /* Border When Click on Menu */
+    /* Border When Click on Menu */
+    --bs-navbar-toggler-focus-width: 0rem;
 }
 
 /* Navbar Brand "Logo" */
@@ -35,10 +56,9 @@ body .navbar {
 /* Navbar Items */
 .navbar .nav-link { color: white; border-radius: 20rem; transition: 0.3s ease; width: fit-content; }
 .navbar .nav-link:focus { color: white; }
-.navbar .nav-link:hover { color: var(--mainColor); background-color: white; transition: 0.3s ease; }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: white !important;
-}
+.navbar .nav-link:hover { color: var(--MainColor); background-color: white; transition: 0.3s ease; }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show { color: white !important; }
+.navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: var(--MainColor) !important; }
 
 /* Menu Button */
 .navbar .navbar-toggler { border-color: transparent; transition: 0.3s ease-in-out; padding: 0.2rem 0.2rem; }
@@ -65,7 +85,7 @@ body .navbar {
 
 /* Title */
 .about .desc h1 {
-    color: var(--mainColor);
+    color: var(--MainColor);
     margin: 0.625rem 0rem;
     font-size: 3rem;
 }
@@ -75,7 +95,7 @@ body .navbar {
 
 /* Circle Shape */
 .about #circle {
-    background-color: var(--secondColor);
+    background-color: var(--SecondColor);
     border-radius: 50%;
     transform: translateY(0px);
     animation: float 5s ease infinite;
@@ -88,53 +108,28 @@ body .navbar {
     100% {transform: translateY(0px);}
 }
 
-/* Image in the Circle */
-.about #circle img { width: 500px; height: 500px; }
+/* ////////////////////////////// Areas Section Styling ////////////////////////////// */
 
-/* Contact Me Button */
-.about .btn-primary {
-    color: white;
-    background-color: var(--mainColor);
-    text-decoration: none;
-    border-radius: 1rem;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5rem 1rem;
-    margin: 1.25rem 0rem;
-    transition: 0.6s ease-in-out;
-}
-.about .btn-primary:hover { background-color: var(--blobColor); border-color: var(--blobColor); }
-
-/* ////////////////////////////// Skills Section Styling ////////////////////////////// */
-/* Skills Section */
-.skills { background-color: var(--secondColor); padding: 6.25rem 12.5rem;}
-
-/* All Sections Headings */
-.skills h1, .projects h1, .contact h1 { color: var(--mainColor); font-size: 2.2rem; }
-
-/* Skills Slider */
-.SkillsSplide {
+/* Areas Slider */
+.AreasSplide {
     max-width: 100%;
     padding-bottom: 1.5rem;
     left: 1.7rem;
 }
 
 /* Cards in the Slider */
-.SkillsSplide .card {
+.AreasSplide .card {
     width: 18rem;
     box-shadow: 0 0 1px #5f5fff;
     transition: 0.5s ease;
     border-radius: 1rem;
     --bs-card-height: 17rem;
 }
-.SkillsSplide .card:hover {
+.AreasSplide .card:hover {
     box-shadow: 0 0 15px 0.5px #5f5fff;
     transform: scale(1.02);
     transition: 0.5s ease;
 }
-
-/* Skill Icons */
-.SkillsSplide .card #skillpic { font-size: 5rem; }
 
 /* Left Arrow of the Slider */
 .splide__arrow--prev { left: -3rem; }
@@ -144,17 +139,29 @@ body .navbar {
 
 /* Slider Pages "Dots" */
 .splide__pagination { right: 2.2rem; bottom: 0rem; }
-.splide__pagination__page.is-active { background: var(--mainColor); }
+.splide__pagination__page.is-active { background: var(--MainColor); }
+
+
+/* ////////////////////////////// Skills Section Styling ////////////////////////////// */
+.SkillIcon {
+    border-radius: 50%;
+    background-color: var(--SecondColor);
+    color: var(--MainColor);
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
 
 /* ////////////////////////////// Contact Section Styling ////////////////////////////// */
 /* Contact Section */
-.contact { padding: 6.25rem 12.5rem; }
+/* .contact { padding: 6.25rem 12.5rem; } */
 
 /* Container of the Rows */
 .contact .contactContainer { padding-left: 1rem; }
 
 /* Social Cards */
-.social { border-radius: 1.7rem; background-color: var(--secondColor); }
+.social { border-radius: 1.7rem; background-color: var(--SecondColor); }
 
 /* Social Logo */
 .socialLogo { position: relative; left: -1rem; background-color: #c1c1ff; border-radius: 50%; width: 3.7rem; height: 3.7rem; }
@@ -170,7 +177,15 @@ body .navbar {
 /* ////////////////////////////// Phone Styling ////////////////////////////// */
 
 @media (max-width:1023px) {
+    
+    .section { padding: 1.25rem; }
+    .sectionHeader { font-size: 1.2rem; margin-bottom: 0.5rem !important; }
 
+    p {
+        font-size: 0.7rem;
+    }
+
+    .navbar .navbar-brand { margin-right: auto !important; }
     .navbar .nav-link { border-radius: 0; }
     .navbar .nav-link:hover {
         color: white;
@@ -179,18 +194,18 @@ body .navbar {
         border-bottom: var(--bs-border-width) solid white;
         transition: 0.3s ease-in-out;
     }
+    .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: white !important; }
 
     .about { min-height: 33vh; padding: 1.5rem; }
+    .about .img-fluid { width: 180px; height: 180px; max-width: fit-content;}
+    .about .figure-img { margin-bottom: 0;}
     .about .desc { padding-top: 5.625rem; }
-    .about #circle img { width: 180px; height: 180px; }
     .about .desc h1 { font-size: 1.1rem; }
     .about .desc h3 { font-size: 0.8rem; }
-    .about .btn-primary { font-size: 0.5rem; padding: 0.3rem 0.7rem; border: 0px solid var(--mainColor); }
+    div .primbtn { font-size: 0.5rem; padding: 0.3rem 0.7rem; border: 0px solid var(--MainColor); }
 
-    .skills { padding: 1.25rem; }
-    .skills h1, .projects h1, .contact h1 { font-size: 1.2rem; margin-bottom: 0.5rem !important; }
-    .SkillsSplide { left: 0.3rem; }
-    .SkillsSplide .card {
+    .AreasSplide { left: 0.3rem; }
+    .AreasSplide .card {
         width: 10rem;
         padding: 0.75rem;
         margin: 0.2rem;
@@ -200,21 +215,30 @@ body .navbar {
         --bs-card-spacer-y: 0.5rem;
         --bs-card-spacer-x: 0.3rem;
     }
-    .SkillsSplide .card #skillpic { font-size: 2rem; }
 
-    /* Skill Title */
-    .SkillsSplide .card .cardTitle { font-size: 1rem; }
-
-    /* Skill Description */
-    .SkillsSplide .card .cardText { font-size: 0.6rem; }
-
-    .SkillsSplide .splide__arrow--prev { left: -1rem; width: 1rem; height: 1rem; }
-    .SkillsSplide .splide__arrow--next { right: -0.5rem; width: 1rem; height: 1rem; }
-    .SkillsSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
-    .SkillsSplide .splide__pagination__page.is-active { background: var(--mainColor); }
+    .AreasSplide .card .card-img-top { width: 3rem !important }
     
-    .contact { padding: 1.25rem; }
-    .contact .contactContainer { margin-left: -1.5rem; }
+    /* Area Title */
+    .AreasSplide .card .cardTitle { font-size: 0.7rem; }
+
+    /* Area Description */
+    .AreasSplide .card .cardText { font-size: 0.5rem; width: 8rem !important; }
+
+    .AreasSplide .splide__arrow--prev { left: -1rem; width: 1rem; height: 1rem; }
+    .AreasSplide .splide__arrow--next { right: -0.5rem; width: 1rem; height: 1rem; }
+    .AreasSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
+    .AreasSplide .splide__pagination__page.is-active { background: var(--MainColor); }
+
+
+    .SkillIcon {
+        width: 2rem;
+        height: 2rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    
+    .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }
     .socialLogo { width: 2.3rem; height: 2.3rem; font-size: 1rem !important;}
     .socialLink { padding: 0.7rem 0rem; font-size: 0.65rem; overflow: hidden; }

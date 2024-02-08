@@ -1,10 +1,11 @@
+import React from 'react'
 import ContactCard from './ContactCard.js';
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function Contact() {
+function Contact() {
     return (
-        <Container fluid className="contact flex-column justify-content-center align-items-center" id="Contact">
-            <h1 className='text-center'>Contact</h1>
+        <Container fluid className="section flex-column justify-content-center align-items-center" id="Contact">
+            <h1 className='sectionHeader text-center mb-4'>Contact</h1>
             <Container className="contactContainer text-center">
                 <Row>
                     <Col lg={4} xs={7} className='m-auto'>
@@ -42,3 +43,5 @@ export default function Contact() {
         </Container>
     );
 }
+
+export default Contact

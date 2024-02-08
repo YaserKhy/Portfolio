@@ -10,49 +10,57 @@ function Skills({ SkillsDict, skillsPerRow }) {
     useEffect(() => {
         setShowFourth(skillsPerRow === 3)
     }, [skillsPerRow])
-    
+
     return (
         <Container className="section" id="Skills">
             <h1 className='sectionHeader text-center mb-4'>Skills</h1>
-            <Row className='justify-content-center align-items-center'>
+            <Row className='justify-content-center align-items-center my-4'>
                 {
                     SkillsDict.slice(0, skillsPerRow).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
-                                <p className='text-center fw-medium'>{label}</p>
+                                <div className='SkillIconContainer'>
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                </div>
+                                <p className='text-center fw-medium mt-2'>{label}</p>
                             </Col>
                         )
                     })
                 }
             </Row>
 
-            <Row className='justify-content-center align-items-center'>
+            <Row className='justify-content-center align-items-center my-4'>
                 {
                     SkillsDict.slice(skillsPerRow, skillsPerRow * 2).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
-                                <p className='text-center fw-medium'>{label}</p>
+                                <div className='SkillIconContainer'>
+
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                </div>
+                                <p className='text-center fw-medium mt-2'>{label}</p>
                             </Col>
                         )
                     })
                 }
             </Row>
 
-            <Row className='justify-content-center align-items-center'>
+            <Row className='justify-content-center align-items-center my-4'>
                 {
                     SkillsDict.slice(skillsPerRow * 2, skillsPerRow * 3).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
-                                <p className='text-center fw-medium'>{label}</p>
+                                <div className='SkillIconContainer'>
+
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                </div>
+                                <p className='text-center fw-medium mt-2'>{label}</p>
                             </Col>
                         )
                     })
@@ -60,15 +68,18 @@ function Skills({ SkillsDict, skillsPerRow }) {
             </Row>
 
             {showFourth &&
-                <Row className='justify-content-center align-items-center'>
+                <Row className='justify-content-center align-items-center my-4'>
                     {
                         SkillsDict.slice(9, 12).map((value, index) => {
                             let label = Object.entries(value)[0][0]
                             let icon = Object.entries(value)[0][1]
                             return (
                                 <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
-                                    <p className='text-center fw-medium'>{label}</p>
+                                    <div className='SkillIconContainer'>
+
+                                        <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                    </div>
+                                    <p className='text-center fw-medium mt-2'>{label}</p>
                                 </Col>
                             )
                         })

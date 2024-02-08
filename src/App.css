@@ -20,7 +20,7 @@
 /* ////////////////////////////// General Styling ////////////////////////////// */
 
 /* All sections */
-.section {padding: 5rem 12.5rem;}
+.section {padding: 6.25rem 12.5rem;}
 
 /* All Sections Headings */
 .sectionHeader { color: var(--MainColor); font-size: 2.2rem; }
@@ -143,9 +143,17 @@ body .navbar {
 
 
 /* ////////////////////////////// Skills Section Styling ////////////////////////////// */
-.SkillIcon {
+.SkillIconContainer {
     border-radius: 50%;
     background-color: var(--SecondColor);
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SkillIcon {
     color: var(--MainColor);
     width: 4.5rem;
     height: 4.5rem;
@@ -229,14 +237,17 @@ body .navbar {
     .AreasSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
     .AreasSplide .splide__pagination__page.is-active { background: var(--MainColor); }
 
+    .SkillIconContainer {
+        width: 5rem;
+        height: 5rem;
+    }
 
     .SkillIcon {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
         padding: 1rem;
         margin: 1rem;
     }
-
     
     .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }

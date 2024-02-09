@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react';
 
-function Skills({ SkillsDict, skillsPerRow }) {
+function Skills({ SkillsArray, skillsPerRow }) {
 
     const [showFourth, setShowFourth] = useState(false)
 
@@ -16,7 +16,7 @@ function Skills({ SkillsDict, skillsPerRow }) {
             <h1 className='sectionHeader text-center mb-4'>Skills</h1>
             <Row className='justify-content-center align-items-center my-4'>
                 {
-                    SkillsDict.slice(0, skillsPerRow).map((value, index) => {
+                    SkillsArray.slice(0, skillsPerRow).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
@@ -33,7 +33,7 @@ function Skills({ SkillsDict, skillsPerRow }) {
 
             <Row className='justify-content-center align-items-center my-4'>
                 {
-                    SkillsDict.slice(skillsPerRow, skillsPerRow * 2).map((value, index) => {
+                    SkillsArray.slice(skillsPerRow, skillsPerRow * 2).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
@@ -51,7 +51,7 @@ function Skills({ SkillsDict, skillsPerRow }) {
 
             <Row className='justify-content-center align-items-center my-4'>
                 {
-                    SkillsDict.slice(skillsPerRow * 2, skillsPerRow * 3).map((value, index) => {
+                    SkillsArray.slice(skillsPerRow * 2, skillsPerRow * 3).map((value, index) => {
                         let label = Object.entries(value)[0][0]
                         let icon = Object.entries(value)[0][1]
                         return (
@@ -70,7 +70,7 @@ function Skills({ SkillsDict, skillsPerRow }) {
             {showFourth &&
                 <Row className='justify-content-center align-items-center my-4'>
                     {
-                        SkillsDict.slice(9, 12).map((value, index) => {
+                        SkillsArray.slice(9, 12).map((value, index) => {
                             let label = Object.entries(value)[0][0]
                             let icon = Object.entries(value)[0][1]
                             return (

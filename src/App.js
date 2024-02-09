@@ -3,8 +3,9 @@ import About from './Components/About.js';
 import Areas from './Components/Areas.js';
 import AreasDict from './Data/AreasDict.js'
 import Skills from './Components/Skills.js';
-import SkillsDict from './Data/SkillsDict.js';
+import SkillsArray from './Data/SkillsArray.js';
 import Projects from './Components/Projects.js'
+import ProjectsArray from './Data/ProjectsArray.js';
 import Contact from './Components/Contact.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,8 +18,17 @@ function App() {
 
   // called only once
   useEffect(() => {
-    const checkDeviceWidth = () => { if (window.innerWidth < 450) { setNumCards(2); setSkillsPerRow(3); } else { setNumCards(3); setSkillsPerRow(4); } }
-    // checkDeviceWidth();
+    const checkDeviceWidth = () => {
+      if (window.innerWidth < 450) {
+        setNumCards(2);
+        setSkillsPerRow(3);
+      }
+      else {
+        setNumCards(3);
+        setSkillsPerRow(4);
+      }
+    }
+    checkDeviceWidth();
     window.addEventListener('resize', checkDeviceWidth) // whenever user resize screen , perform checkDeviceWidth
     return () => { window.removeEventListener('resize', checkDeviceWidth) }
   }, []);
@@ -28,8 +38,8 @@ function App() {
       <Header />
       <About />
       <Areas AreasDict={AreasDict} numCards={numCards} />
-      <Skills SkillsDict={SkillsDict} skillsPerRow={skillsPerRow} />
-      <Projects />
+      <Skills SkillsArray={SkillsArray} skillsPerRow={skillsPerRow} />
+      <Projects ProjectsArray={ProjectsArray} />
       <Contact />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Button, Figure, FigureImage } from 'react-bootstrap'
+import { Stack, Button, Image } from 'react-bootstrap'
 
 function About() {
     return (
@@ -10,11 +10,21 @@ function About() {
                 <h3>I develop and design inspiring interfaces</h3>
                 <Button className='primbtn' href='#Contact'>Contact Me</Button>
             </div>
-            <div id='circle' className='mx-auto'>
-                <Figure>
-                    <FigureImage src={`${process.env.PUBLIC_URL}/codingpic.svg`} alt='coding' width={500} height={500}/>
-                </Figure>
-            </div>
+            <Image
+                roundedCircle
+                src={`${process.env.PUBLIC_URL}/codingpic.svg`}
+                alt='coding'
+                width={500}
+                height={500}
+                className='mx-auto'
+                id='codingPic'
+                style={{
+                    backgroundColor: 'var(--SecondColor)',
+                    transform: 'translateY(0px)',
+                    animation: 'float 5s ease infinite',
+                    maxWidth: 'fit-content'
+                }}
+            />
         </Stack>
     )
 }

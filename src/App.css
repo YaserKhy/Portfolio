@@ -93,14 +93,6 @@ body .navbar {
 /* Sub Titles */
 .about .desc h3 { font-size: 1.5rem; }
 
-/* Circle Shape */
-.about #circle {
-    background-color: var(--SecondColor);
-    border-radius: 50%;
-    transform: translateY(0px);
-    animation: float 5s ease infinite;
-}
-
 /* Floating Animation */
 @keyframes float {
     0% {transform: translateY(0px);}
@@ -161,6 +153,27 @@ body .navbar {
     margin: 1.5rem;
 }
 
+/* ////////////////////////////// Projects Section Styling ////////////////////////////// */
+span.carousel-control-next-icon {
+    background-image : url(../public/chevron-right-solid.svg)
+}
+
+span.carousel-control-prev-icon {
+    background-image : url(../public/chevron-left-solid.svg)
+}
+
+.ProjectsCarousel {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.ProjectsCarousel .ProjectDetails {
+    bottom: 0rem;
+    left: 0rem;
+    border-radius: 0rem 0rem 5rem 5rem;
+    background-color: rgb(0,0,0,0.3)
+}
+
 /* ////////////////////////////// Contact Section Styling ////////////////////////////// */
 /* Contact Section */
 /* .contact { padding: 6.25rem 12.5rem; } */
@@ -205,11 +218,11 @@ body .navbar {
     .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: white !important; }
 
     .about { min-height: 33vh; padding: 1.5rem; }
-    .about .img-fluid { width: 180px; height: 180px; max-width: fit-content;}
-    .about .figure-img { margin-bottom: 0;}
+    
     .about .desc { padding-top: 5.625rem; }
     .about .desc h1 { font-size: 1.1rem; }
     .about .desc h3 { font-size: 0.8rem; }
+    .about #codingPic { width: 180px; height: 180px;}
     div .primbtn { font-size: 0.5rem; padding: 0.3rem 0.7rem; border: 0px solid var(--MainColor); }
 
     .AreasSplide { left: 0.3rem; }
@@ -247,6 +260,50 @@ body .navbar {
         height: 2.5rem;
         padding: 1rem;
         margin: 1rem;
+    }
+
+    .ProjectsCarousel {
+        padding: 0;
+        width: fit-content;
+    }
+
+    .ProjectsCarousel h3 {
+        font-size: 0.8rem;
+        /* max-width: 0rem; */
+    }
+
+    .ProjectsCarousel p {
+        font-size: 0.5rem;
+        max-width: fit-content;
+    }
+
+    .ProjectsCarousel .ProjectDetails {
+        padding: 0;
+        height: 5rem;
+    }
+
+    .ProjectsCarousel .ProjectDetails .mycol {
+        padding: 0.5rem 0rem 0rem 0rem ;
+    }
+
+    .ProjectsCarousel .ProjectDetails a {
+        width: fit-content !important;
+    }
+
+    a.carousel-control-next {
+        right: -3rem;
+        top: 5rem;
+        height: 0;
+    }
+    
+    a.carousel-control-prev {
+        left: -3rem;
+        top: 5rem;
+        height: 0;
+    }
+
+    .ProjectsCarousel .carousel-indicators {
+        margin-bottom: 0rem;
     }
     
     .section .contactContainer { margin-left: -1.5rem; }

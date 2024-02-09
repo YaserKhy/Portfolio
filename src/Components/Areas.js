@@ -20,7 +20,7 @@ function Areas({ AreasDict, numCards }) {
 
                 {Object.entries(AreasDict).map(([key, value]) => {
                     return (
-                        <SplideSlide>
+                        <SplideSlide key={key}>
                             <Card className='p-4 m-3 align-items-center justify-content-center' key={key}>
                                 <Card.Img variant='top' src={`${process.env.PUBLIC_URL}/${value[0]}`} alt={`${value[1]}`} style={{ width: '5rem' }} />
                                 <Card.Body className='text-center'>

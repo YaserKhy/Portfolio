@@ -192,7 +192,7 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     .about .desc h3 { font-size: 0.8rem !important; }
     .about #codingPic { width: 180px; height: 180px;}
 
-    .AreasSplide { left: 0.3rem; }
+    .AreasSplide { left: 0.3rem !important; }
     .AreasSplide .card {
         width: 10rem;
         padding: 0.75rem;
@@ -228,7 +228,8 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     .ProjectsCarousel .ProjectDetails a { width: fit-content !important; }
     a.carousel-control-next { right: -3rem; top: 5rem; height: 0; }
     a.carousel-control-prev { left: -3rem; top: 5rem; height: 0; }
-    .ProjectsCarousel .carousel-indicators { margin-bottom: 0rem; }
+    .ProjectsCarousel .carousel-indicators { margin-bottom: 0rem;}
+    .ProjectsCarousel .carousel-indicators button { width: 14px; height: 2px;}
     
     .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }

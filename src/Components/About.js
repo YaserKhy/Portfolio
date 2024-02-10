@@ -4,10 +4,10 @@ import { Stack, Button, Image } from 'react-bootstrap'
 function About() {
     return (
         <Stack className='about' direction='horizontal' id='About'>
-            <div className='desc ms-auto'>
-                <h3 className='fw-light'>Hello I'm Yaser</h3>
-                <h1>Front-End Developer</h1>
-                <h3>I develop and design inspiring interfaces</h3>
+            <div className='desc d-flex flex-column ms-auto'>
+                <h3 className='fw-light fs-4 mb-0'>Hello I'm Yaser</h3>
+                <h1 className='my-3' style={{fontSize:'3rem', color:'var(--MainColor)'}}>Front-End Developer</h1>
+                <h3 className='fs-4'>I develop and design inspiring interfaces</h3>
                 <Button className='primbtn' href='#Contact'>Contact Me</Button>
             </div>
             <Image

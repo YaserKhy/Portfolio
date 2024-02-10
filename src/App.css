@@ -29,16 +29,17 @@
 div .primbtn {
     color: white;
     background-color: var(--MainColor);
-    text-decoration: none;
+    border: 0px solid var(--MainColor);
     border-radius: 1rem;
     width: fit-content;
     height: fit-content;
     padding: 0.5rem 1rem;
     margin: 1.25rem 0rem;
+    text-decoration: none;
 }
 div .primbtn:hover { background-color: #353cff; border-color: #353cff; }
 
-/* ////////////////////////////// Navbar Styling ////////////////////////////// */
+/* ////////////////////////////// Header Section Styling ////////////////////////////// */
 body .navbar {
     /* Padding of Navbar Items */
     --bs-navbar-nav-link-padding-x: 1rem;
@@ -49,19 +50,28 @@ body .navbar {
     --bs-navbar-toggler-focus-width: 0rem;
 }
 
-/* Navbar Brand "Logo" */
-.navbar .navbar-brand { color: white; }
-.navbar .navbar-brand:hover { color: white; }
-
 /* Navbar Items */
-.navbar .nav-link { color: white; border-radius: 20rem; transition: 0.3s ease; width: fit-content; }
+.navbar .nav-link {
+    color: white;
+    border-radius: 20rem;
+    transition: 0.3s ease;
+    width: fit-content;
+}
 .navbar .nav-link:focus { color: white; }
-.navbar .nav-link:hover { color: var(--MainColor); background-color: white; transition: 0.3s ease; }
+.navbar .nav-link:hover {
+    color: var(--MainColor);
+    background-color: white;
+    transition: 0.3s ease;
+}
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show { color: white !important; }
 .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: var(--MainColor) !important; }
 
 /* Menu Button */
-.navbar .navbar-toggler { border-color: transparent; transition: 0.3s ease-in-out; padding: 0.2rem 0.2rem; }
+.navbar .navbar-toggler {
+    border-color: transparent;
+    transition: 0.3s ease-in-out;
+    padding: 0.2rem 0.2rem;
+}
 .navbar .navbar-toggler:focus {
     background-color: white;
     --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgb%2837, 43, 193%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e);
@@ -80,19 +90,6 @@ body .navbar {
     min-height: 100vh;
 }
 
-/* Brief Description */
-.about .desc { display: flex; flex-direction: column; }
-
-/* Title */
-.about .desc h1 {
-    color: var(--MainColor);
-    margin: 0.625rem 0rem;
-    font-size: 3rem;
-}
-
-/* Sub Titles */
-.about .desc h3 { font-size: 1.5rem; }
-
 /* Floating Animation */
 @keyframes float {
     0% {transform: translateY(0px);}
@@ -102,13 +99,6 @@ body .navbar {
 
 /* ////////////////////////////// Areas Section Styling ////////////////////////////// */
 
-/* Areas Slider */
-.AreasSplide {
-    max-width: 100%;
-    padding-bottom: 1.5rem;
-    left: 1.7rem;
-}
-
 /* Cards in the Slider */
 .AreasSplide .card {
     width: 18rem;
@@ -117,7 +107,7 @@ body .navbar {
     border-radius: 1rem;
     --bs-card-height: 17rem;
 }
-.AreasSplide .card:hover {
+.AreasSplide .card:hover, .SkillIconContainer:hover{
     box-shadow: 0 0 15px 0.5px #5f5fff;
     transform: scale(1.02);
     transition: 0.5s ease;
@@ -133,39 +123,22 @@ body .navbar {
 .splide__pagination { right: 2.2rem; bottom: 0rem; }
 .splide__pagination__page.is-active { background: var(--MainColor); }
 
-
 /* ////////////////////////////// Skills Section Styling ////////////////////////////// */
 .SkillIconContainer {
     border-radius: 50%;
     background-color: var(--SecondColor);
     width: 7.5rem;
     height: 7.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: 0.5s ease;
 }
 
-.SkillIcon {
-    color: var(--MainColor);
-    width: 4.5rem;
-    height: 4.5rem;
-    padding: 1.5rem;
-    margin: 1.5rem;
-}
+.SkillIcon { color: var(--MainColor); width: 4.5rem; height: 4.5rem; }
 
 /* ////////////////////////////// Projects Section Styling ////////////////////////////// */
-span.carousel-control-next-icon {
-    background-image : url(../public/chevron-right-solid.svg)
-}
+span.carousel-control-next-icon { background-image : url(../public/chevron-right-solid.svg) }
+span.carousel-control-prev-icon { background-image : url(../public/chevron-left-solid.svg) }
 
-span.carousel-control-prev-icon {
-    background-image : url(../public/chevron-left-solid.svg)
-}
-
-.ProjectsCarousel {
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
+.ProjectsCarousel { padding-left: 10rem; padding-right: 10rem; }
 
 .ProjectsCarousel .ProjectDetails {
     bottom: 0rem;
@@ -175,8 +148,6 @@ span.carousel-control-prev-icon {
 }
 
 /* ////////////////////////////// Contact Section Styling ////////////////////////////// */
-/* Contact Section */
-/* .contact { padding: 6.25rem 12.5rem; } */
 
 /* Container of the Rows */
 .contact .contactContainer { padding-left: 1rem; }
@@ -201,10 +172,8 @@ span.carousel-control-prev-icon {
     
     .section { padding: 1.25rem; }
     .sectionHeader { font-size: 1.2rem; margin-bottom: 0.5rem !important; }
-
-    p {
-        font-size: 0.7rem;
-    }
+    p { font-size: 0.7rem; }
+    div .primbtn { font-size: 0.5rem; padding: 0.3rem 0.7rem; }
 
     .navbar .navbar-brand { margin-right: auto !important; }
     .navbar .nav-link { border-radius: 0; }
@@ -218,12 +187,10 @@ span.carousel-control-prev-icon {
     .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: white !important; }
 
     .about { min-height: 33vh; padding: 1.5rem; }
-    
-    .about .desc { padding-top: 5.625rem; }
-    .about .desc h1 { font-size: 1.1rem; }
-    .about .desc h3 { font-size: 0.8rem; }
+    .about .desc { padding-top: 5.625rem !important; }
+    .about .desc h1 { font-size: 1.1rem !important; }
+    .about .desc h3 { font-size: 0.8rem !important; }
     .about #codingPic { width: 180px; height: 180px;}
-    div .primbtn { font-size: 0.5rem; padding: 0.3rem 0.7rem; border: 0px solid var(--MainColor); }
 
     .AreasSplide { left: 0.3rem; }
     .AreasSplide .card {
@@ -250,61 +217,18 @@ span.carousel-control-prev-icon {
     .AreasSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
     .AreasSplide .splide__pagination__page.is-active { background: var(--MainColor); }
 
-    .SkillIconContainer {
-        width: 5rem;
-        height: 5rem;
-    }
+    .SkillIconContainer { width: 5rem; height: 5rem; }
+    .SkillIcon { width: 2.5rem; height: 2.5rem; padding: 1rem; margin: 1rem; }
 
-    .SkillIcon {
-        width: 2.5rem;
-        height: 2.5rem;
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    .ProjectsCarousel {
-        padding: 0;
-        width: fit-content;
-    }
-
-    .ProjectsCarousel h3 {
-        font-size: 0.8rem;
-        /* max-width: 0rem; */
-    }
-
-    .ProjectsCarousel p {
-        font-size: 0.5rem;
-        max-width: fit-content;
-    }
-
-    .ProjectsCarousel .ProjectDetails {
-        padding: 0;
-        height: 5rem;
-    }
-
-    .ProjectsCarousel .ProjectDetails .mycol {
-        padding: 0.5rem 0rem 0rem 0rem ;
-    }
-
-    .ProjectsCarousel .ProjectDetails a {
-        width: fit-content !important;
-    }
-
-    a.carousel-control-next {
-        right: -3rem;
-        top: 5rem;
-        height: 0;
-    }
-    
-    a.carousel-control-prev {
-        left: -3rem;
-        top: 5rem;
-        height: 0;
-    }
-
-    .ProjectsCarousel .carousel-indicators {
-        margin-bottom: 0rem;
-    }
+    .ProjectsCarousel { padding: 0; width: fit-content; }
+    .ProjectsCarousel h3 { font-size: 0.8rem; max-width: fit-content; }
+    .ProjectsCarousel p { font-size: 0.5rem; max-width: fit-content; }
+    .ProjectsCarousel .ProjectDetails { padding: 0; height: 5rem; }
+    .ProjectsCarousel .ProjectDetails .mycol { padding: 0.5rem 0rem 0rem 0rem; }
+    .ProjectsCarousel .ProjectDetails a { width: fit-content !important; }
+    a.carousel-control-next { right: -3rem; top: 5rem; height: 0; }
+    a.carousel-control-prev { left: -3rem; top: 5rem; height: 0; }
+    .ProjectsCarousel .carousel-indicators { margin-bottom: 0rem; }
     
     .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }

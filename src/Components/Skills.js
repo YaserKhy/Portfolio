@@ -21,10 +21,10 @@ function Skills({ SkillsArray, skillsPerRow }) {
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <div className='SkillIconContainer'>
-                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                <div className='SkillIconContainer d-flex justify-content-center align-items-center'>
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon p-4 m-4' />
                                 </div>
-                                <p className='text-center fw-medium mt-2'>{label}</p>
+                                <p className='text-center fw-medium mt-3'>{label}</p>
                             </Col>
                         )
                     })
@@ -38,11 +38,11 @@ function Skills({ SkillsArray, skillsPerRow }) {
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <div className='SkillIconContainer'>
+                                <div className='SkillIconContainer d-flex justify-content-center align-items-center'>
 
-                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon p-4 m-4' />
                                 </div>
-                                <p className='text-center fw-medium mt-2'>{label}</p>
+                                <p className='text-center fw-medium mt-3'>{label}</p>
                             </Col>
                         )
                     })
@@ -56,11 +56,11 @@ function Skills({ SkillsArray, skillsPerRow }) {
                         let icon = Object.entries(value)[0][1]
                         return (
                             <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                <div className='SkillIconContainer'>
+                                <div className='SkillIconContainer d-flex justify-content-center align-items-center'>
 
-                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                    <FontAwesomeIcon key={index} icon={icon} className='SkillIcon p-4 m-4' />
                                 </div>
-                                <p className='text-center fw-medium mt-2'>{label}</p>
+                                <p className='text-center fw-medium mt-3'>{label}</p>
                             </Col>
                         )
                     })
@@ -75,11 +75,11 @@ function Skills({ SkillsArray, skillsPerRow }) {
                             let icon = Object.entries(value)[0][1]
                             return (
                                 <Col key={index} className='d-flex flex-column justify-content-center align-items-center'>
-                                    <div className='SkillIconContainer'>
+                                    <div className='SkillIconContainer d-flex justify-content-center align-items-center'>
 
-                                        <FontAwesomeIcon key={index} icon={icon} className='SkillIcon' />
+                                        <FontAwesomeIcon key={index} icon={icon} className='SkillIcon p-4 m-4' />
                                     </div>
-                                    <p className='text-center fw-medium mt-2'>{label}</p>
+                                    <p className='text-center fw-medium mt-3'>{label}</p>
                                 </Col>
                             )
                         })

@@ -9,15 +9,11 @@ function Areas({ AreasDict, numCards }) {
     return (
         <Stack className='section' id='Areas' style={{ backgroundColor: 'var(--SecondColor)' }}>
             <h1 className='sectionHeader text-center mb-4'>Areas of Interest</h1>
-            <Splide className='AreasSplide' options={{
-                type: 'loop',
-                perPage: numCards,
-                perMove: 1,
-                arrowScale: 1,
-                arrowPosition: 'end',
-                focus: 0
-            }}>
-
+            <Splide
+                className='AreasSplide mw-100 pb-4'
+                style={{ left: '1.7rem' }}
+                options={{ type: 'loop', perPage: numCards, perMove: 1, arrowScale: 1, arrowPosition: 'end', focus: 0 }}
+            >
                 {Object.entries(AreasDict).map(([key, value]) => {
                     return (
                         <SplideSlide key={key}>

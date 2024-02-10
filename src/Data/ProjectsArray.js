@@ -8,7 +8,7 @@ const ProjectsArray = [
     ,
     [
         'Hazzir',
-        'SA.jpeg',
+        'HZ.png',
         'Have fun trying the trivia quiz game \'Hazzir\' with 5 different categories.',
         'https://hazzir.netlify.app'
     ]

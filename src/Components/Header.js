@@ -5,7 +5,7 @@ function Header() {
     return (
         <Navbar sticky='top' expand="lg" style={{backgroundColor:'var(--MainColor)'}}>
             <Container>
-                <Navbar.Brand className='fs-4 fw-semibold my-0 ms-2 text-uppercase' href="#About" style={{marginRight:'15rem'}}>Yaser Alkhayyat</Navbar.Brand>
+                <Navbar.Brand className='fs-4 fw-semibold my-0 ms-2 text-uppercase' href="#About" style={{color:'white',marginRight:'15rem'}}>Yaser Alkhayyat</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

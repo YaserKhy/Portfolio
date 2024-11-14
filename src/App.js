@@ -35,12 +35,23 @@ function App() {
 
   return (
     <div>
+      {/* Header Component : Contains navbar and logo */}
       <Header />
+
+      {/* About Component : Contains circle, name, and title */}
       <About />
+
+      {/* Intrests Component : Contains slider of fields and icons */}
       <Areas AreasDict={AreasDict} numCards={numCards} />
-      <Skills SkillsArray={SkillsArray} skillsPerRow={skillsPerRow} />
-      <Projects ProjectsArray={ProjectsArray} />
-      <Contact />
+      
+      {/* Skills Component : Contains grid of skills and icons */}
+      {/* <Skills SkillsArray={SkillsArray} skillsPerRow={skillsPerRow} /> */}
+      
+      {/* Projects Component : Contains slider of projects */}
+      {/* <Projects ProjectsArray={ProjectsArray} /> */}
+      
+      {/* Contact Component : Contains grid of contact */}
+      {/* <Contact /> */}
     </div>
   );
 }

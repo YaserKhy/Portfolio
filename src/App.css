@@ -152,8 +152,6 @@ body .navbar {
     transition: 0.5s ease;
 }
 
-.SkillIcon { color: var(--MainColor); width: 4.5rem; height: 4.5rem; }
-
 /* ////////////////////////////// Projects Section Styling ////////////////////////////// */
 span.carousel-control-next-icon { background-image : url(../public/chevron-right-solid.svg) }
 span.carousel-control-prev-icon { background-image : url(../public/chevron-left-solid.svg) }
@@ -207,7 +205,7 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover { color: white !important; }
 
     .about { min-height: 33vh; padding: 1.5rem; }
-    .about .desc { padding-top: 5.625rem !important; }
+    .about .desc { padding-top: 5.625rem !important; width: 130% !important;}
     .about .desc h1 { font-size: 1.1rem !important; }
     .about .desc h3 { font-size: 0.8rem !important; }
     .about #codingPic { width: 180px; height: 180px;}
@@ -239,8 +237,7 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     .AreasSplide .splide__pagination__page { width: 5px; height: 5px; left: 1rem; }
     .AreasSplide .splide__pagination__page.is-active { background: var(--MainColor); }
 
-    .SkillIconContainer { width: 5rem; height: 5rem; }
-    .SkillIcon { width: 2.5rem; height: 2.5rem; padding: 1rem; margin: 1rem; }
+    .SkillIconContainer { width: 4rem; height: 4rem; }
 
     .ProjectsCarousel { padding: 0; width: fit-content; }
     .ProjectsCarousel h3 { font-size: 0.8rem; max-width: fit-content; }

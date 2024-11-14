@@ -10,7 +10,7 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#About">About</Nav.Link>
-            <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#Areas">Areas of Interest</Nav.Link>
+            <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#Areas">Interests</Nav.Link>
             <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#Skills">Skills</Nav.Link>
             <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#Projects">Projects</Nav.Link>
             <Nav.Link className='fs-6 fw-medium py-0 my-0 mx-2' href="#Contact">Contact</Nav.Link>

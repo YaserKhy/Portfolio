@@ -45,7 +45,7 @@ function App() {
       <Areas AreasDict={AreasDict} numCards={numCards} />
       
       {/* Skills Component : Contains grid of skills and icons */}
-      {/* <Skills SkillsArray={SkillsArray} skillsPerRow={skillsPerRow} /> */}
+      <Skills SkillsArray={SkillsArray} skillsPerRow={skillsPerRow} />
       
       {/* Projects Component : Contains slider of projects */}
       {/* <Projects ProjectsArray={ProjectsArray} /> */}

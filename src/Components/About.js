@@ -7,7 +7,7 @@ function About() {
     <Row className='about' id='About'>
       <Col className='d-flex flex-column align-items-center'>
         <div className='desc w-75 d-flex justify-content-center flex-column'>
-          <h3 className='fw-light fs-4 mb-0'>Hello I'm Yaser, a passionate</h3>
+          <h3 className='fw-light fs-4 mb-2'>Hello I'm Yaser</h3>
           <Typewriter options={{
             wrapperClassName: 'title',
             cursorClassName: 'titleCursor',

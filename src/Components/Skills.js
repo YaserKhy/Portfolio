@@ -12,13 +12,11 @@ function Skills({ SkillsArray, skillsPerRow }) {
             let label = Object.entries(value)[0][0]
             let icon = Object.entries(value)[0][1]
             return (
-              <Col lg={5} xs={3} sm={3} md={3} key={index} className='d-flex flex-column justify-content-center align-items-center'>
+              <Col lg={2} xs={3} key={index} className='d-flex flex-column justify-content-center align-items-center'>
                 <div className='SkillIconContainer d-flex justify-content-center align-items-center'>
-                  {
-                    label.includes('_icon') ? <FontAwesomeIcon color='var(--MainColor)' icon={icon} size='2x'/> : <Image src={icon} width={30} />
-                  }
+                  {label.includes('_icon') ? <FontAwesomeIcon color='var(--MainColor)' icon={icon} className='SkillIcon' /> : <Image src={icon} className='SkillPic' />}
                 </div>
-                <p className='text-center fw-medium mt-3' style={{fontSize:'0.5rem'}}>{label.includes('_icon') ? label.split('_')[0] : label}</p>
+                <p className='text-center fw-medium mt-3'>{label.includes('_icon') ? label.split('_')[0] : label}</p>
               </Col>
             )
           })

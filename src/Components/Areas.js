@@ -18,7 +18,7 @@ function Areas({ AreasDict, numCards }) {
           return (
             <SplideSlide key={key}>
               <Card className='p-4 m-3 align-items-center justify-content-center' key={key}>
-                <Card.Img variant='top' src={`${process.env.PUBLIC_URL}/${value[0]}`} alt={`${value[1]}`} style={{ width: '5rem' }} />
+                <Card.Img variant='top' src={value[0]} alt={value[1]} style={{ width: '5rem' }} />
                 <Card.Body className='text-center'>
                   <Card.Title className='cardTitle'>{key}</Card.Title>
                   <Card.Text className='cardText' style={{ width: '15rem' }}>{value[2]}</Card.Text>

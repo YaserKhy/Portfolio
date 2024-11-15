@@ -179,6 +179,8 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
 /* Social Logo */
 .socialLogo { position: relative; left: -1rem; background-color: #c1c1ff; border-radius: 50%; width: 3.7rem; height: 3.7rem; }
 
+.socialLogo img {width: 38px;}
+
 /* Social Link */
 .socialLink { font-size: 1.2rem; }
 
@@ -260,5 +262,6 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }
     .socialLogo { width: 2.3rem; height: 2.3rem; font-size: 1rem !important;}
+    .socialLogo img {width: 20px;}
     .socialLink { padding: 0.7rem 0rem; font-size: 0.65rem; overflow: hidden; }
 }

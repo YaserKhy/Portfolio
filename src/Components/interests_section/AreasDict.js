@@ -1,8 +1,8 @@
-import appdev from '../assets/app.png';
-import fed from '../assets/fed.png';
-import ai1 from '../assets/ai1.png';
-import ml from '../assets/ml.png';
-import ux from '../assets/ux.png';
+import appdev from '../../assets/app.png';
+import fed from '../../assets/fed.png';
+import ai1 from '../../assets/ai1.png';
+import ml from '../../assets/ml.png';
+import ux from '../../assets/ux.png';
 
 const AreasDict = {
   'Mobile Apps Development': [appdev, 'Mobile Apps', 'Building innovative solutions using Flutter'],

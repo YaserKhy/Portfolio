@@ -5,7 +5,6 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { Card, Stack } from 'react-bootstrap'
 
 function Areas({ AreasDict, numCards }) {
-
   return (
     <Stack className='section' id='Areas' style={{ backgroundColor: 'var(--SecondColor)' }}>
       <h1 className='sectionHeader text-center mb-4'>Interests</h1>

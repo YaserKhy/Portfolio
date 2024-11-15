@@ -1,8 +1,9 @@
 import React from 'react'
+import SkillsArray from './SkillsArray.js';
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Skills({ SkillsArray, skillsPerRow }) {
+function Skills() {
   return (
     <Container className="section" id="Skills">
       <h1 className='sectionHeader text-center mb-4'>Skills</h1>

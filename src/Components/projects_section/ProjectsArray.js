@@ -1,32 +1,38 @@
+import SentimentAnalysis from '../../assets/sentiment.jpeg';
+import onze from '../../assets/onze.jpeg';
+import hazzir from '../../assets/hazzir.png';
+import nateq from '../../assets/nateq.jpeg';
+import shaghaf from '../../assets/shaghaf.jpeg';
+
 const ProjectsArray = [
     [
-        'Nateq',
-        'SA.jpeg',
+        'Nateq (Soon)',
+        nateq,
         'AI powered application to translate and teach Arabic Sign Language (ArSL)',
-        'https://yaserkh-sentiment-analysis.netlify.app'
+        'https://lnkd.in/eUvReKpp'
     ],
     [
         'Shaghaf',
-        'SA.jpeg',
+        shaghaf,
         'Application that connects passionates to their passion by providing them the workshops they desire',
-        'https://yaserkh-sentiment-analysis.netlify.app'
+        'https://bind.link/@shaghaf'
     ],
     [
         'ONZE Cafe',
-        'SA.jpeg',
+        onze,
         'Application for coffeshop "ONZE" to assist customers and employees in tracking orders',
-        'https://yaserkh-sentiment-analysis.netlify.app'
+        'https://github.com/YaserKhy/Project-8'
     ],
     [
         'Sentiment Analysis',
-        'SA.jpeg',
+        SentimentAnalysis,
         'Web application to perform sentiment analysis on some given text.',
         'https://yaserkh-sentiment-analysis.netlify.app'
     ]
     ,
     [
         'Hazzir',
-        'HZ.png',
+        hazzir,
         'Have fun trying the trivia quiz game \'Hazzir\' with 5 different categories.',
         'https://hazzir.netlify.app'
     ]

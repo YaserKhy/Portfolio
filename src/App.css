@@ -249,15 +249,19 @@ span.carousel-control-prev-icon { background-image : url(../public/chevron-left-
     #Skills .SkillPic { width: 30px !important;}
 
     .ProjectsCarousel { padding: 0; width: fit-content; }
-    .ProjectsCarousel h3 { font-size: 0.8rem; max-width: fit-content; }
-    .ProjectsCarousel p { font-size: 0.5rem; max-width: fit-content; }
-    .ProjectsCarousel .ProjectDetails { padding: 0; height: 5rem; }
-    .ProjectsCarousel .ProjectDetails .mycol { padding: 0.5rem 0rem 0rem 0rem; }
-    .ProjectsCarousel .ProjectDetails a { width: fit-content !important; }
+    .ProjectsCarousel h3 { font-size: 0.8rem; max-width: fit-content; color: var(--MainColor);}
+    .ProjectsCarousel p { font-size: 0.5rem; max-width: fit-content; color: #666666;}
+    .ProjectsCarousel .ProjectDetails {display: none !important;}
+    .ProjectPhone {display: flex !important;}
+    .carousel-caption {padding: 0 !important;}
     a.carousel-control-next { right: -3rem; top: 5rem; height: 0; }
     a.carousel-control-prev { left: -3rem; top: 5rem; height: 0; }
     .ProjectsCarousel .carousel-indicators { margin-bottom: 0rem;}
     .ProjectsCarousel .carousel-indicators button { width: 14px; height: 2px;}
+    #Projects img {height: auto !important;}
+    .ProjectsCarousel .carousel-indicators button {background-color: var(--MainColor) !important; opacity: 0.5;}
+    .ProjectsCarousel .carousel-indicators button.active {background-color: var(--MainColor) !important; opacity: 1;}
+    #Projects .primbtn {margin: 0 !important;}
     
     .section .contactContainer { margin-left: -1.5rem; }
     .social { margin: 1rem; width: 13rem; }

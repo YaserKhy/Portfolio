@@ -1,7 +1,6 @@
 import Header from './Components/Header.js';
 import About from './Components/About.js';
 import Areas from './Components/interests_section/Areas.js';
-import AreasDict from './Components/interests_section/AreasDict.js'
 import Skills from './Components/skills_section/Skills.js';
 import Projects from './Components/projects_section/Projects.js'
 import ProjectsArray from './Components/projects_section/ProjectsArray.js';
@@ -31,13 +30,13 @@ function App() {
       <About />
 
       {/* Interests Component : Contains slider of fields and icons */}
-      <Areas AreasDict={AreasDict} numCards={numCards} />
+      <Areas numCards={numCards} />
       
       {/* Skills Component : Contains grid of skills and icons */}
       <Skills/>
       
       {/* Projects Component : Contains slider of projects */}
-      {/* <Projects ProjectsArray={ProjectsArray} /> */}
+      <Projects ProjectsArray={ProjectsArray} />
 
       {/* Projects Component : Contains slider of projects */}
       {/* <Projects ProjectsArray={ProjectsArray} /> */}

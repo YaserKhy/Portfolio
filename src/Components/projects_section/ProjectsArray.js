@@ -6,7 +6,7 @@ import shaghaf from '../../assets/shaghaf.jpeg';
 
 const ProjectsArray = [
     [
-        'Nateq (Soon)',
+        'Nateq',
         nateq,
         'AI powered application to translate and teach Arabic Sign Language (ArSL)',
         'https://lnkd.in/eUvReKpp'
